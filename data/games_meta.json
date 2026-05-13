@@ -1,0 +1,699 @@
+{
+  "252490": {
+    "name": "Rust",
+    "details": {
+      "name": "Rust",
+      "release_date": "Feb 8, 2018",
+      "is_free": false,
+      "price_usd": 39.99,
+      "discount_pct": 0,
+      "developers": [
+        "Facepunch Studios"
+      ],
+      "publishers": [
+        "Facepunch Studios"
+      ],
+      "categories": [
+        "Multi-player",
+        "MMO",
+        "PvP",
+        "Online PvP",
+        "Co-op",
+        "Online Co-op",
+        "Cross-Platform Multiplayer",
+        "Steam Achievements",
+        "Steam Trading Cards",
+        "Steam Workshop",
+        "In-App Purchases",
+        "Adjustable Text Size",
+        "Camera Comfort",
+        "Color Alternatives",
+        "Custom Volume Controls",
+        "Adjustable Difficulty",
+        "Stereo Sound",
+        "Subtitle Options",
+        "Surround Sound",
+        "Valve Anti-Cheat enabled",
+        "Stats",
+        "Remote Play on Tablet"
+      ],
+      "genres": [
+        "Action",
+        "Adventure",
+        "Indie",
+        "Massively Multiplayer",
+        "RPG"
+      ],
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/252490/header.jpg?t=1778597738"
+    },
+    "reviews": {
+      "total_reviews": 1358875,
+      "positive_pct": 87.0,
+      "review_score_desc": "Very Positive"
+    },
+    "last_refresh": "2026-05-13"
+  },
+  "221100": {
+    "name": "DayZ",
+    "details": {
+      "name": "DayZ",
+      "release_date": "Dec 13, 2018",
+      "is_free": false,
+      "price_usd": 49.99,
+      "discount_pct": 0,
+      "developers": [
+        "Bohemia Interactive"
+      ],
+      "publishers": [
+        "Bohemia Interactive"
+      ],
+      "categories": [
+        "Multi-player",
+        "MMO",
+        "PvP",
+        "Online PvP",
+        "Co-op",
+        "Online Co-op",
+        "Steam Achievements",
+        "Steam Trading Cards",
+        "Steam Workshop",
+        "Steam Cloud",
+        "Valve Anti-Cheat enabled"
+      ],
+      "genres": [
+        "Action",
+        "Adventure",
+        "Massively Multiplayer"
+      ],
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/221100/header.jpg?t=1769695513"
+    },
+    "reviews": {
+      "total_reviews": 460358,
+      "positive_pct": 77.7,
+      "review_score_desc": "Mostly Positive"
+    },
+    "last_refresh": "2026-05-13"
+  },
+  "346110": {
+    "name": "ARK: Survival Evolved",
+    "details": {
+      "name": "ARK: Survival Evolved",
+      "release_date": "Aug 27, 2017",
+      "is_free": false,
+      "price_usd": 14.99,
+      "discount_pct": 0,
+      "developers": [
+        "Studio Wildcard",
+        "Instinct Games",
+        "Efecto Studios",
+        "Virtual Basement LLC"
+      ],
+      "publishers": [
+        "Studio Wildcard",
+        "Snail Games USA"
+      ],
+      "categories": [
+        "Single-player",
+        "Multi-player",
+        "MMO",
+        "Co-op",
+        "Steam Achievements",
+        "Full controller support",
+        "Steam Workshop",
+        "Steam Cloud",
+        "Valve Anti-Cheat enabled",
+        "Includes level editor",
+        "Remote Play on Tablet",
+        "Family Sharing"
+      ],
+      "genres": [
+        "Action",
+        "Adventure",
+        "Indie",
+        "Massively Multiplayer",
+        "RPG"
+      ],
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/346110/header.jpg?t=1765677889"
+    },
+    "reviews": {
+      "total_reviews": 766691,
+      "positive_pct": 83.3,
+      "review_score_desc": "Very Positive"
+    },
+    "last_refresh": "2026-05-13"
+  },
+  "2399830": {
+    "name": "ARK: Survival Ascended",
+    "details": {
+      "name": "ARK: Survival Ascended",
+      "release_date": "Oct 25, 2023",
+      "is_free": false,
+      "price_usd": 44.99,
+      "discount_pct": 0,
+      "developers": [
+        "Studio Wildcard",
+        "Grove Street Games",
+        "Instinct Games"
+      ],
+      "publishers": [
+        "Studio Wildcard",
+        "Snail Games USA"
+      ],
+      "categories": [
+        "Single-player",
+        "Multi-player",
+        "MMO",
+        "PvP",
+        "Online PvP",
+        "LAN PvP",
+        "Co-op",
+        "Online Co-op",
+        "LAN Co-op",
+        "Shared/Split Screen Co-op",
+        "Shared/Split Screen",
+        "Cross-Platform Multiplayer",
+        "Steam Achievements",
+        "Full controller support",
+        "Includes level editor",
+        "Remote Play Together",
+        "Family Sharing"
+      ],
+      "genres": [
+        "Action",
+        "Adventure",
+        "Indie",
+        "Massively Multiplayer",
+        "RPG",
+        "Early Access"
+      ],
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2399830/d934813ca531af0fce69fe36bc972f1c90d1aa19/header.jpg?t=1766710980"
+    },
+    "reviews": {
+      "total_reviews": 104542,
+      "positive_pct": 60.2,
+      "review_score_desc": "Mixed"
+    },
+    "last_refresh": "2026-05-13"
+  },
+  "892970": {
+    "name": "Valheim",
+    "details": {
+      "name": "Valheim",
+      "release_date": "Feb 2, 2021",
+      "is_free": false,
+      "price_usd": 19.99,
+      "discount_pct": 0,
+      "developers": [
+        "Iron Gate AB"
+      ],
+      "publishers": [
+        "Coffee Stain Publishing"
+      ],
+      "categories": [
+        "Single-player",
+        "Multi-player",
+        "Co-op",
+        "Online Co-op",
+        "Full controller support",
+        "Camera Comfort",
+        "Custom Volume Controls",
+        "Adjustable Difficulty",
+        "Save Anytime",
+        "Stereo Sound",
+        "Steam Cloud",
+        "Remote Play on Tablet",
+        "Family Sharing"
+      ],
+      "genres": [
+        "Action",
+        "Adventure",
+        "Indie",
+        "RPG",
+        "Early Access"
+      ],
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/892970/de0bdcf6c008c508a79d8e75eb91fc67f4bebd5d/header.jpg?t=1765967243"
+    },
+    "reviews": {
+      "total_reviews": 533217,
+      "positive_pct": 94.0,
+      "review_score_desc": "Very Positive"
+    },
+    "last_refresh": "2026-05-13"
+  },
+  "251570": {
+    "name": "7 Days to Die",
+    "details": {
+      "name": "7 Days to Die",
+      "release_date": "Jul 25, 2024",
+      "is_free": false,
+      "price_usd": 44.99,
+      "discount_pct": 0,
+      "developers": [
+        "The Fun Pimps"
+      ],
+      "publishers": [
+        "The Fun Pimps Entertainment LLC"
+      ],
+      "categories": [
+        "Single-player",
+        "Multi-player",
+        "PvP",
+        "Online PvP",
+        "LAN PvP",
+        "Co-op",
+        "Online Co-op",
+        "LAN Co-op",
+        "Cross-Platform Multiplayer",
+        "Steam Achievements",
+        "Full controller support",
+        "Steam Trading Cards",
+        "Includes level editor",
+        "Remote Play on Tablet",
+        "Remote Play on TV",
+        "Family Sharing"
+      ],
+      "genres": [
+        "Action",
+        "Adventure",
+        "Indie",
+        "RPG",
+        "Simulation",
+        "Strategy"
+      ],
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/251570/header.jpg?t=1776457619"
+    },
+    "reviews": {
+      "total_reviews": 398775,
+      "positive_pct": 87.1,
+      "review_score_desc": "Very Positive"
+    },
+    "last_refresh": "2026-05-13"
+  },
+  "1604030": {
+    "name": "V Rising",
+    "details": {
+      "name": "V Rising",
+      "release_date": "May 8, 2024",
+      "is_free": false,
+      "price_usd": 34.99,
+      "discount_pct": 0,
+      "developers": [
+        "Stunlock Studios"
+      ],
+      "publishers": [
+        "Stunlock Studios"
+      ],
+      "categories": [
+        "Single-player",
+        "Multi-player",
+        "PvP",
+        "Online PvP",
+        "LAN PvP",
+        "Co-op",
+        "Online Co-op",
+        "LAN Co-op",
+        "Steam Achievements",
+        "Camera Comfort",
+        "Custom Volume Controls",
+        "Adjustable Difficulty",
+        "Playable without Timed Input",
+        "Save Anytime",
+        "Stereo Sound",
+        "Subtitle Options",
+        "Surround Sound",
+        "Partial Controller Support",
+        "Steam Cloud",
+        "Family Sharing"
+      ],
+      "genres": [
+        "Action",
+        "Adventure",
+        "Massively Multiplayer"
+      ],
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1604030/be49834ab147ad22ba17005fb847c93917d18b97/header.jpg?t=1776271883"
+    },
+    "reviews": {
+      "total_reviews": 132986,
+      "positive_pct": 89.0,
+      "review_score_desc": "Very Positive"
+    },
+    "last_refresh": "2026-05-13"
+  },
+  "440900": {
+    "name": "Conan Exiles",
+    "details": {
+      "name": "Conan Exiles Enhanced",
+      "release_date": "May 8, 2018",
+      "is_free": false,
+      "price_usd": 29.99,
+      "discount_pct": 25,
+      "developers": [
+        "Funcom",
+        "Inflexion Games"
+      ],
+      "publishers": [
+        "Funcom"
+      ],
+      "categories": [
+        "Single-player",
+        "Multi-player",
+        "PvP",
+        "Online PvP",
+        "Co-op",
+        "Online Co-op",
+        "Steam Achievements",
+        "Full controller support",
+        "Steam Trading Cards",
+        "Steam Workshop",
+        "Remote Play on Tablet",
+        "Remote Play on TV",
+        "Family Sharing"
+      ],
+      "genres": [
+        "Action",
+        "Adventure",
+        "Massively Multiplayer",
+        "RPG",
+        "Simulation",
+        "Strategy"
+      ],
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/440900/b49106f92fc749db3710622258d00eb9576ecaff/header_alt_assets_7.jpg?t=1778144715"
+    },
+    "reviews": {
+      "total_reviews": 113830,
+      "positive_pct": 79.0,
+      "review_score_desc": "Mostly Positive"
+    },
+    "last_refresh": "2026-05-13"
+  },
+  "1172710": {
+    "name": "Dune: Awakening",
+    "details": {
+      "name": "Dune: Awakening",
+      "release_date": "Jun 10, 2025",
+      "is_free": false,
+      "price_usd": 29.99,
+      "discount_pct": 40,
+      "developers": [
+        "Funcom"
+      ],
+      "publishers": [
+        "Funcom"
+      ],
+      "categories": [
+        "Single-player",
+        "Multi-player",
+        "Co-op",
+        "Online Co-op",
+        "Steam Achievements",
+        "Full controller support",
+        "Adjustable Text Size",
+        "Camera Comfort",
+        "Color Alternatives",
+        "Custom Volume Controls",
+        "Playable without Timed Input",
+        "Save Anytime",
+        "Stereo Sound",
+        "Subtitle Options",
+        "Surround Sound",
+        "Steam Cloud",
+        "Family Sharing"
+      ],
+      "genres": [
+        "Action",
+        "Adventure",
+        "Massively Multiplayer",
+        "RPG"
+      ],
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1172710/da994ea756677c3d1d9a77accb8596a8661f4cad/header.jpg?t=1777565238"
+    },
+    "reviews": {
+      "total_reviews": 75594,
+      "positive_pct": 70.3,
+      "review_score_desc": "Mostly Positive"
+    },
+    "last_refresh": "2026-05-13"
+  },
+  "1623730": {
+    "name": "Palworld",
+    "details": {
+      "name": "Palworld",
+      "release_date": "Jan 18, 2024",
+      "is_free": false,
+      "price_usd": 29.99,
+      "discount_pct": 0,
+      "developers": [
+        "Pocketpair"
+      ],
+      "publishers": [
+        "Pocketpair"
+      ],
+      "categories": [
+        "Single-player",
+        "Multi-player",
+        "Co-op",
+        "Online Co-op",
+        "Cross-Platform Multiplayer",
+        "Steam Achievements",
+        "Full controller support",
+        "Steam Trading Cards",
+        "Steam Workshop",
+        "Steam Cloud",
+        "Family Sharing"
+      ],
+      "genres": [
+        "Action",
+        "Adventure",
+        "Indie",
+        "RPG",
+        "Early Access"
+      ],
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1623730/058bd87dc17a7179e07c446aa64d0574ca43ab9d/header.jpg?t=1773936597"
+    },
+    "reviews": {
+      "total_reviews": 420640,
+      "positive_pct": 94.2,
+      "review_score_desc": "Very Positive"
+    },
+    "last_refresh": "2026-05-13"
+  },
+  "108600": {
+    "name": "Project Zomboid",
+    "details": {
+      "name": "Project Zomboid",
+      "release_date": "Nov 8, 2013",
+      "is_free": false,
+      "price_usd": 19.99,
+      "discount_pct": 0,
+      "developers": [
+        "The Indie Stone"
+      ],
+      "publishers": [
+        "The Indie Stone"
+      ],
+      "categories": [
+        "Single-player",
+        "Multi-player",
+        "PvP",
+        "Online PvP",
+        "Co-op",
+        "Online Co-op",
+        "Shared/Split Screen Co-op",
+        "Shared/Split Screen",
+        "Cross-Platform Multiplayer",
+        "Steam Trading Cards",
+        "Steam Workshop",
+        "Partial Controller Support",
+        "Steam Cloud",
+        "Remote Play Together",
+        "Family Sharing"
+      ],
+      "genres": [
+        "Indie",
+        "RPG",
+        "Simulation",
+        "Early Access"
+      ],
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/108600/header.jpg?t=1777298596"
+    },
+    "reviews": {
+      "total_reviews": 448573,
+      "positive_pct": 94.0,
+      "review_score_desc": "Very Positive"
+    },
+    "last_refresh": "2026-05-13"
+  },
+  "1203620": {
+    "name": "Enshrouded",
+    "details": {
+      "name": "Enshrouded",
+      "release_date": "Jan 24, 2024",
+      "is_free": false,
+      "price_usd": 29.99,
+      "discount_pct": 0,
+      "developers": [
+        "Keen Games GmbH"
+      ],
+      "publishers": [
+        "Keen Games GmbH"
+      ],
+      "categories": [
+        "Single-player",
+        "Multi-player",
+        "Co-op",
+        "Online Co-op",
+        "Steam Achievements",
+        "Full controller support",
+        "Adjustable Text Size",
+        "Camera Comfort",
+        "Color Alternatives",
+        "Custom Volume Controls",
+        "Adjustable Difficulty",
+        "Stereo Sound",
+        "Steam Cloud",
+        "Family Sharing"
+      ],
+      "genres": [
+        "Action",
+        "Adventure",
+        "Indie",
+        "RPG",
+        "Early Access"
+      ],
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1203620/062c788d22ecf236269da0f115150c0d3b7055a4/header.jpg?t=1776758849"
+    },
+    "reviews": {
+      "total_reviews": 101055,
+      "positive_pct": 86.0,
+      "review_score_desc": "Very Positive"
+    },
+    "last_refresh": "2026-05-13"
+  },
+  "2646460": {
+    "name": "Soulmask",
+    "details": {
+      "name": "Soulmask",
+      "release_date": "Apr 9, 2026",
+      "is_free": false,
+      "price_usd": 29.99,
+      "discount_pct": 0,
+      "developers": [
+        "CampFire Studio"
+      ],
+      "publishers": [
+        "Qooland Games"
+      ],
+      "categories": [
+        "Single-player",
+        "Multi-player",
+        "PvP",
+        "Online PvP",
+        "LAN PvP",
+        "Co-op",
+        "Online Co-op",
+        "LAN Co-op",
+        "Steam Achievements",
+        "Steam Workshop",
+        "Partial Controller Support",
+        "Steam Cloud",
+        "Family Sharing"
+      ],
+      "genres": [
+        "Adventure",
+        "Indie",
+        "RPG",
+        "Simulation",
+        "Free To Play"
+      ],
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2646460/23b769b6bc3cbb2fd32aed4ee20e5a3d8e1d0f31/header.jpg?t=1778518505"
+    },
+    "reviews": {
+      "total_reviews": 21228,
+      "positive_pct": 77.6,
+      "review_score_desc": "Mostly Positive"
+    },
+    "last_refresh": "2026-05-13"
+  },
+  "2139460": {
+    "name": "Once Human",
+    "details": {
+      "name": "Once Human",
+      "release_date": "Jul 9, 2024",
+      "is_free": true,
+      "price_usd": null,
+      "discount_pct": 0,
+      "developers": [
+        "Starry Studio"
+      ],
+      "publishers": [
+        "Starry Studio",
+        "NetEase Games"
+      ],
+      "categories": [
+        "Multi-player",
+        "MMO",
+        "PvP",
+        "Online PvP",
+        "Co-op",
+        "Online Co-op",
+        "Full controller support",
+        "Steam Trading Cards",
+        "In-App Purchases"
+      ],
+      "genres": [
+        "Action",
+        "Adventure",
+        "RPG",
+        "Simulation",
+        "Strategy",
+        "Free To Play"
+      ],
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2139460/5bbe94c08561c1bae6913c2c87dfa5f8b2874339/header.jpg?t=1778124576"
+    },
+    "reviews": {
+      "total_reviews": 171836,
+      "positive_pct": 77.7,
+      "review_score_desc": "Mostly Positive"
+    },
+    "last_refresh": "2026-05-13"
+  },
+  "1371580": {
+    "name": "Myth of Empires",
+    "details": {
+      "name": "Myth of Empires",
+      "release_date": "Feb 21, 2024",
+      "is_free": false,
+      "price_usd": 8.99,
+      "discount_pct": 70,
+      "developers": [
+        "Angela Game"
+      ],
+      "publishers": [
+        "Imperium Interactive Entertainment"
+      ],
+      "categories": [
+        "Single-player",
+        "Multi-player",
+        "MMO",
+        "PvP",
+        "Online PvP",
+        "LAN PvP",
+        "Co-op",
+        "Online Co-op",
+        "LAN Co-op",
+        "Steam Achievements",
+        "Steam Workshop",
+        "In-App Purchases",
+        "HDR available"
+      ],
+      "genres": [],
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1371580/header.jpg?t=1775704770"
+    },
+    "reviews": {
+      "total_reviews": 17367,
+      "positive_pct": 67.5,
+      "review_score_desc": "Mixed"
+    },
+    "last_refresh": "2026-05-13"
+  }
+}
