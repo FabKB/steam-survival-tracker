@@ -251,6 +251,12 @@
       "ccu": 146725,
       "twitch_viewers": 35809,
       "twitch_channels": 445
+    },
+    {
+      "date": "2026-05-15",
+      "ccu": 153940,
+      "twitch_viewers": 22360,
+      "twitch_channels": 495
     }
   ],
   "221100": [
@@ -505,6 +511,12 @@
       "ccu": 51968,
       "twitch_viewers": 7366,
       "twitch_channels": 319
+    },
+    {
+      "date": "2026-05-15",
+      "ccu": 48921,
+      "twitch_viewers": 19446,
+      "twitch_channels": 323
     }
   ],
   "346110": [
@@ -758,6 +770,12 @@
       "date": "2026-05-14",
       "ccu": 19739,
       "twitch_viewers": 395,
+      "twitch_channels": 63
+    },
+    {
+      "date": "2026-05-15",
+      "ccu": 22531,
+      "twitch_viewers": 372,
       "twitch_channels": 63
     }
   ],
@@ -1013,6 +1031,12 @@
       "ccu": 22723,
       "twitch_viewers": 1274,
       "twitch_channels": 124
+    },
+    {
+      "date": "2026-05-15",
+      "ccu": 24231,
+      "twitch_viewers": 1188,
+      "twitch_channels": 108
     }
   ],
   "892970": [
@@ -1267,6 +1291,12 @@
       "ccu": 20168,
       "twitch_viewers": 1091,
       "twitch_channels": 90
+    },
+    {
+      "date": "2026-05-15",
+      "ccu": 18891,
+      "twitch_viewers": 1773,
+      "twitch_channels": 91
     }
   ],
   "251570": [
@@ -1521,6 +1551,12 @@
       "ccu": 20906,
       "twitch_viewers": 1286,
       "twitch_channels": 150
+    },
+    {
+      "date": "2026-05-15",
+      "ccu": 23226,
+      "twitch_viewers": 981,
+      "twitch_channels": 120
     }
   ],
   "1604030": [
@@ -1775,6 +1811,12 @@
       "ccu": 4897,
       "twitch_viewers": 190,
       "twitch_channels": 39
+    },
+    {
+      "date": "2026-05-15",
+      "ccu": 10476,
+      "twitch_viewers": 919,
+      "twitch_channels": 51
     }
   ],
   "440900": [
@@ -2029,6 +2071,12 @@
       "ccu": 34652,
       "twitch_viewers": 1757,
       "twitch_channels": 210
+    },
+    {
+      "date": "2026-05-15",
+      "ccu": 31965,
+      "twitch_viewers": 2746,
+      "twitch_channels": 156
     }
   ],
   "1172710": [
@@ -2283,6 +2331,12 @@
       "ccu": 7720,
       "twitch_viewers": 184,
       "twitch_channels": 31
+    },
+    {
+      "date": "2026-05-15",
+      "ccu": 7537,
+      "twitch_viewers": 276,
+      "twitch_channels": 25
     }
   ],
   "1623730": [
@@ -2537,6 +2591,12 @@
       "ccu": 16325,
       "twitch_viewers": 234,
       "twitch_channels": 59
+    },
+    {
+      "date": "2026-05-15",
+      "ccu": 19301,
+      "twitch_viewers": 336,
+      "twitch_channels": 58
     }
   ],
   "108600": [
@@ -2791,6 +2851,12 @@
       "ccu": 29782,
       "twitch_viewers": 2341,
       "twitch_channels": 108
+    },
+    {
+      "date": "2026-05-15",
+      "ccu": 31078,
+      "twitch_viewers": 1779,
+      "twitch_channels": 101
     }
   ],
   "1203620": [
@@ -3045,6 +3111,12 @@
       "ccu": 16565,
       "twitch_viewers": 609,
       "twitch_channels": 68
+    },
+    {
+      "date": "2026-05-15",
+      "ccu": 15240,
+      "twitch_viewers": 513,
+      "twitch_channels": 54
     }
   ],
   "2646460": [
@@ -3299,6 +3371,12 @@
       "ccu": 9234,
       "twitch_viewers": 196,
       "twitch_channels": 25
+    },
+    {
+      "date": "2026-05-15",
+      "ccu": 9817,
+      "twitch_viewers": 150,
+      "twitch_channels": 27
     }
   ],
   "2139460": [
@@ -3553,6 +3631,12 @@
       "ccu": 13705,
       "twitch_viewers": 566,
       "twitch_channels": 77
+    },
+    {
+      "date": "2026-05-15",
+      "ccu": 14950,
+      "twitch_viewers": 1003,
+      "twitch_channels": 83
     }
   ],
   "1371580": [
@@ -3806,6 +3890,12 @@
       "date": "2026-05-14",
       "ccu": 719,
       "twitch_viewers": 5,
+      "twitch_channels": 2
+    },
+    {
+      "date": "2026-05-15",
+      "ccu": 818,
+      "twitch_viewers": 2,
       "twitch_channels": 2
     }
   ]
