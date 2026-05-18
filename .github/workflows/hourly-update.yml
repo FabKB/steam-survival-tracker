@@ -3,6 +3,7 @@ name: Hourly Steam + Twitch ingestion
 on:
   # Toutes les heures à 5 minutes après l'heure pile
   # (évite le rush à HH:00 sur les runners GitHub)
+  # refresh pour activer la MàJ
   schedule:
     - cron: '5 * * * *'
   workflow_dispatch:
