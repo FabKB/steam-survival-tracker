@@ -1,146 +1,161 @@
-# Steam Survival Tracker
+# Steam Survival Tracker (v2 — pipeline horaire)
 
-Suivi quotidien automatisé des jeux Steam combinant **monde persistant + coop + PvP**.
-
-![daily-update](https://github.com/USER/REPO/actions/workflows/daily-update.yml/badge.svg)
-![deploy-pages](https://github.com/USER/REPO/actions/workflows/deploy-pages.yml/badge.svg)
+Suivi automatisé des jeux Steam combinant **monde persistant + coop + PvP**, avec :
+- ⏱️ Collecte **toutes les heures** (24 points/jour)
+- 📊 Peak CCU et peak Twitch viewers calculés sur 24h
+- 🌍 Région primaire déduite (heure UTC + langue Twitch dominante)
+- 📈 Sparklines basées sur les peaks journaliers (pas des instantanés)
 
 🔗 **Voir l'app en live** : https://USER.github.io/REPO/
 
-## 🏗️ Comment ça marche
+## 🆕 Nouveautés v2
+
+### Avant (v1)
+- 1 mesure/jour à 10h UTC = juste un instantané
+- Pas de notion de "peak"
+- Pas de signal géographique
+
+### Maintenant (v2)
+- 24 mesures/jour → peak CCU réel sur 24h
+- Heure UTC du peak affichée (utile pour comprendre quelle zone géo pousse l'audience)
+- Région primaire affichée (Europe / Amérique / Asie Est / Russie/CEI / etc.)
+- Désambiguïsation par langue Twitch dominante au moment du peak
+
+## 🏗️ Architecture
 
 ```
 ┌────────────────────────────────────────────────────┐
-│  GitHub Actions (cron quotidien 10h UTC)           │
+│  GitHub Actions (cron horaire, HH:05 UTC)          │
 │  └─> python ingest_steam.py                        │
-│       ├─> Steam API (CCU live)                    │
-│       └─> Twitch Helix API (viewers/streams)      │
-│  └─> commit & push data/history.json              │
+│       ├─> Steam API : CCU live                    │
+│       └─> Twitch Helix : viewers + langue         │
+│  └─> commit & push                                │
+│       ├─> data/hourly/YYYY-MM-DD.json (raw)       │
+│       └─> data/daily_stats.json (peaks calculés)  │
 └────────────────────────────────────────────────────┘
                           ↓
 ┌────────────────────────────────────────────────────┐
-│  GitHub Pages (déploiement auto à chaque push)     │
+│  GitHub Pages (déploiement auto si data/ change)   │
 │  └─> https://USER.github.io/REPO/                  │
-│  └─> index.html fetch data/history.json           │
+│  └─> index.html fetch daily_stats.json            │
 └────────────────────────────────────────────────────┘
 ```
 
-Aucun serveur à louer, aucune carte bancaire. Tout est gratuit pour usage perso.
+## 📊 Structure des données
 
-## 📋 Setup en 5 étapes
+### `data/hourly/YYYY-MM-DD.json`
+Snapshots horaires complets du jour :
+```json
+{
+  "date": "2026-05-14",
+  "snapshots": [
+    {
+      "hour_utc": 16,
+      "timestamp": "2026-05-14T16:05:00+00:00",
+      "games": [
+        {
+          "appid": 252490,
+          "name": "Rust",
+          "ccu": 95432,
+          "twitch_viewers": 18432,
+          "twitch_channels": 487,
+          "viewers_by_lang": { "en": 12000, "fr": 2500, "ru": 2000, ... }
+        }, ...
+      ]
+    }, ...
+  ]
+}
+```
 
-### 1. Fork ou clone ce repo
+### `data/daily_stats.json`
+Agrégat des peaks journaliers (1 entrée par jour x jeu) :
+```json
+{
+  "2026-05-14": {
+    "252490": {
+      "peak_ccu": 105947,
+      "peak_ccu_hour_utc": 20,
+      "peak_twitch_viewers": 19432,
+      "peak_twitch_hour_utc": 21,
+      "region": {
+        "code": "EU",
+        "label": "🇪🇺 Europe",
+        "emoji": "🇪🇺",
+        "confidence": "high"
+      },
+      "samples": 24
+    }
+  }
+}
+```
 
-Clone-le dans ton propre compte GitHub.
+## 🌍 Méthode de détection de la région
 
-### 2. Crée une app Twitch (3 min)
+### Heuristique fuseau horaire
+Pour chaque région, on définit la plage UTC où il est "19h local" (cœur du prime time gaming) :
 
-Va sur [dev.twitch.tv/console/apps](https://dev.twitch.tv/console/apps), clique **Register Your Application** :
-- Name : `steam-survival-tracker` (n'importe quoi)
-- OAuth Redirect URLs : `http://localhost`
-- Category : **Application Integration**
+| Région | UTC du peak local 19h | Plage UTC plausible |
+|---|---|---|
+| 🇺🇸 Amérique Ouest | 03h UTC | 00h-07h |
+| 🇺🇸 Amérique Est | 00h UTC | 21h-04h |
+| 🇧🇷 Amérique Latine | 22h UTC | 21h-03h |
+| 🇪🇺 Europe | 18h UTC | 16h-22h |
+| 🇷🇺 Russie/CEI | 16h UTC | 13h-19h |
+| 🌍 Moyen-Orient | 16h UTC | 13h-19h |
+| 🇨🇳 Asie Est | 11h UTC | 09h-15h |
+| 🇸🇬 Asie SE | 12h UTC | 10h-16h |
+| 🇦🇺 Océanie | 09h UTC | 06h-12h |
 
-Récupère :
-- **Client ID** (visible directement)
-- **Client Secret** (clique "New Secret" pour le générer)
+### Désambiguïsation par langue Twitch
+Quand 2 régions sont plausibles à la même heure UTC (ex: Europe vs Russie à 16h),
+on regarde la **langue dominante** des viewers Twitch au moment du peak.
 
-### 3. Configure les secrets GitHub
+| Langue dominante | Boost la région |
+|---|---|
+| ru, uk | Russie/CEI |
+| zh, ko, ja | Asie Est |
+| fr, de, it, pl | Europe |
+| pt, es | Europe / LATAM (50/50) |
+| en | Amérique + Europe (peu informatif seul) |
 
-Dans ton repo : **Settings** → **Secrets and variables** → **Actions** → **New repository secret** :
+### Niveau de confiance
+- **high** : 1 région clairement dominante
+- **medium** : ambiguïté légère
+- **low** : 2 régions affichées simultanément (l'app le marque visuellement)
 
-| Nom | Valeur |
-|-----|--------|
-| `TWITCH_CLIENT_ID` | Ton Client ID |
-| `TWITCH_SECRET` | Ton Client Secret |
+## 📋 Setup
 
-### 4. Active GitHub Actions
+Voir `SETUP_v2.md` pour la migration depuis v1 ou un setup neuf.
 
-Va dans l'onglet **Actions** de ton repo et clique sur "I understand my workflows, go ahead and enable them".
-
-### 5. Active GitHub Pages
-
-**Settings** → **Pages** :
-- Source : **GitHub Actions**
-
-Le premier déploiement se fait automatiquement après le prochain push (ou lance manuellement le workflow "Deploy to GitHub Pages" depuis l'onglet Actions).
-
-## 🚀 Lancer manuellement la première ingestion
-
-Va dans **Actions** → **Daily Steam + Twitch ingestion** → **Run workflow** → **Run workflow**.
-
-Ça lance immédiatement la collecte de données. Une fois terminé (1-2 minutes), `data/history.json` est mis à jour et l'app se redéploie automatiquement.
-
-## 🛠️ Lancer en local (optionnel)
+## 🛠️ Lancer en local
 
 ```bash
-# Sans Twitch
-python ingest_steam.py
-
-# Avec Twitch
 export TWITCH_CLIENT_ID=xxx
 export TWITCH_SECRET=yyy
 python ingest_steam.py
 ```
 
-Pour visualiser localement, lance un serveur HTTP simple :
+Le script créera/mettra à jour :
+- `data/hourly/YYYY-MM-DD.json` (snapshot de l'heure actuelle ajouté)
+- `data/daily_stats.json` (peaks du jour recalculés)
+
+Pour visualiser :
 ```bash
 python -m http.server 8000
+# → http://localhost:8000
 ```
-Puis ouvre http://localhost:8000.
-
-## 📁 Structure
-
-```
-.
-├── index.html              # L'app (React + Recharts via CDN)
-├── ingest_steam.py         # Script de collecte (Steam + Twitch APIs)
-├── data/
-│   ├── history.json        # Historique cumulé (mis à jour quotidiennement)
-│   ├── games_meta.json     # Métadonnées Steam (prix, reviews) - hebdo
-│   ├── twitch_game_ids.json # Cache des IDs Twitch
-│   └── snapshot_*.json     # Archives quotidiennes
-└── .github/workflows/
-    ├── daily-update.yml    # Cron quotidien d'ingestion
-    └── deploy-pages.yml    # Déploiement auto sur Pages
-```
-
-## 🎯 Personnaliser
-
-### Ajouter / retirer des jeux
-
-Édite la constante `GAMES` dans `ingest_steam.py` :
-```python
-GAMES = {
-    252490: ("Rust", "Rust"),
-    # ajouter ici: appid: (nom Steam, nom Twitch)
-}
-```
-
-Édite aussi la constante `GAMES` dans `index.html` (avec les métadonnées : PvP, persistant, etc.).
-
-### Changer l'heure d'exécution
-
-Édite `.github/workflows/daily-update.yml`, ligne `cron`. Format : `'minute heure jour mois jour_de_la_semaine'` en UTC.
-
-## 📊 Données collectées
-
-Pour chaque jeu, chaque jour :
-- **CCU Steam** : joueurs simultanés (instantané)
-- **Viewers Twitch** : somme des viewers sur tous les streams live
-- **Channels Twitch** : nombre de streams live
-
-Et hebdomadairement :
-- Prix Steam (avec promo si en cours)
-- % positif des reviews + nombre total
-- Date de sortie, dev, éditeur, genres, tags
 
 ## ❓ FAQ
 
-**Q : Pourquoi pas de monitoring "all-time peak" ?**
-L'API Steam ne le donne pas. Cette valeur reste maintenue manuellement dans `index.html` (elle bouge très rarement).
+**Q : Pourquoi le pipeline est-il horaire et pas par minute ?**
+GitHub Actions Free Tier offre 2000 minutes/mois. Un run dure ~30 sec. 24 runs/jour = ~12 min/jour = 360 min/mois. Largement OK. Une fréquence plus haute consommerait trop pour peu de bénéfice (le CCU ne bouge pas vite).
 
-**Q : Les données risquent d'être perdues ?**
-Non, tout est versionné dans Git. Tu peux remonter à n'importe quelle date via l'historique des commits.
+**Q : Les peaks remontent à quand ?**
+Avant la v2, on n'avait que des instantanés. Le repo contient un `daily_stats.json` initial simulé pour les 60 derniers jours, mais les vrais peaks ne commencent qu'à la première heure d'ingestion v2.
 
-**Q : Mon repo est privé, ça marche quand même ?**
-GitHub Pages sur un repo privé nécessite GitHub Pro (4 $/mois). Sinon, mets le repo en public (les données collectées sont publiques de toute façon) ou utilise Cloudflare Pages.
+**Q : Peut-on changer l'heuristique de région ?**
+Oui, c'est dans `infer_region()` et `LANG_TO_REGION` dans `ingest_steam.py`.
+
+**Q : Que se passe-t-il si Twitch est down 1 heure ?**
+Le snapshot horaire est quand même créé avec les CCU Steam, sans les viewers Twitch.
+Au calcul du peak du jour, on prend les heures où les données sont dispo.
