@@ -98,7 +98,7 @@ let DAILY_STATS = {};
 async function fetchHistory() {
   // 1. Charger daily_stats.json (peaks horaires + régions)
   try {
-    const response = await fetch('data/daily_stats.json', { cache: 'no-cache' });
+    const response = await fetch('data/daily_stats.json?t=' + Date.now(), { cache: 'no-store' });
     if (response.ok) {
       DAILY_STATS = await response.json();
       // Reconstruire HISTORY depuis daily_stats (un point/jour = peak CCU)
@@ -128,7 +128,7 @@ async function fetchHistory() {
 
   // 2. Fallback : ancien history.json (data brutes)
   try {
-    const response = await fetch('data/history.json', { cache: 'no-cache' });
+    const response = await fetch('data/history.json?t=' + Date.now(), { cache: 'no-store' });
     if (!response.ok) throw new Error('HTTP ' + response.status);
     const fresh = await response.json();
     if (fresh && Object.keys(fresh).length > 0) {
@@ -497,6 +497,47 @@ function App() {
         .trend-up { color: #B8E596; }
         .trend-down { color: #E89090; }
         .trend-flat { color: #F7D77E; }
+
+        /* Force l'affichage de la scrollbar horizontale (visible sur Windows/Linux) */
+        .table-scroll-x {
+          overflow-x: auto;
+          overflow-y: hidden;
+          /* WebKit/Chromium */
+          scrollbar-width: thin;
+          scrollbar-color: rgba(255, 138, 76, 0.4) rgba(20, 16, 12, 0.6);
+        }
+        .table-scroll-x::-webkit-scrollbar {
+          height: 12px;
+          -webkit-appearance: none;
+        }
+        .table-scroll-x::-webkit-scrollbar-track {
+          background: rgba(20, 16, 12, 0.8);
+          border-radius: 6px;
+        }
+        .table-scroll-x::-webkit-scrollbar-thumb {
+          background: linear-gradient(90deg, rgba(255, 138, 76, 0.5), rgba(255, 138, 76, 0.8));
+          border-radius: 6px;
+          border: 2px solid rgba(20, 16, 12, 0.8);
+        }
+        .table-scroll-x::-webkit-scrollbar-thumb:hover {
+          background: rgba(255, 138, 76, 1);
+        }
+
+        /* Hint "scrollez" */
+        .scroll-hint {
+          padding: 8px 16px;
+          background: rgba(255, 138, 76, 0.06);
+          border-bottom: 1px solid rgba(255, 138, 76, 0.12);
+          color: #FFB088;
+          font-size: 11px;
+          font-family: 'JetBrains Mono', monospace;
+          letter-spacing: 0.05em;
+          text-align: center;
+          display: none;
+        }
+        @media (max-width: 1600px) {
+          .scroll-hint { display: block; }
+        }
       `}</style>
 
       <div className="ember ember-1"></div>
@@ -644,7 +685,8 @@ function App() {
                 background: 'rgba(20, 16, 12, 0.6)', border: '1px solid rgba(255, 138, 76, 0.12)',
                 borderRadius: 12, overflow: 'hidden', backdropFilter: 'blur(10px)',
               }}>
-                <div style={{ overflowX: 'auto' }}>
+                <div className="scroll-hint">← Faites défiler horizontalement pour voir toutes les colonnes →</div>
+                <div className="table-scroll-x" style={{ overflowX: 'auto' }}>
                   <table style={{ width: '100%', borderCollapse: 'collapse', minWidth: 1700 }}>
                     <thead>
                       <tr style={{ background: 'rgba(255, 138, 76, 0.05)', borderBottom: '1px solid rgba(255, 138, 76, 0.15)' }}>
