@@ -28172,80 +28172,15 @@
   },
   "2026-08-09": {
     "252490": {
-      "peak_ccu": 107003,
+      "peak_ccu": 116938,
       "peak_ccu_hour_utc": 9,
-      "peak_twitch_viewers": 204300,
+      "peak_twitch_viewers": 227746,
       "peak_twitch_hour_utc": 9,
       "region": {
         "code": "ASIA_E",
         "label": "🇨🇳 Asie Est",
         "emoji": "🇨🇳",
         "confidence": "high"
-      },
-      "samples": 5
-    },
-    "1371580": {
-      "peak_ccu": 691,
-      "peak_ccu_hour_utc": 9,
-      "peak_twitch_viewers": 0,
-      "peak_twitch_hour_utc": 2,
-      "region": {
-        "code": "OCEANIA",
-        "label": "🇦🇺 Océanie",
-        "emoji": "🇦🇺",
-        "confidence": "medium"
-      },
-      "samples": 5
-    },
-    "346110": {
-      "peak_ccu": 20859,
-      "peak_ccu_hour_utc": 9,
-      "peak_twitch_viewers": 214,
-      "peak_twitch_hour_utc": 2,
-      "region": {
-        "code": "ASIA_E",
-        "label": "🇨🇳 Asie Est",
-        "emoji": "🇨🇳",
-        "confidence": "medium"
-      },
-      "samples": 5
-    },
-    "892970": {
-      "peak_ccu": 16740,
-      "peak_ccu_hour_utc": 2,
-      "peak_twitch_viewers": 472,
-      "peak_twitch_hour_utc": 2,
-      "region": {
-        "code": "MIXED",
-        "label": "🇺🇸 Amérique Ouest / Amérique Est",
-        "emoji": "🇺🇸🇺🇸",
-        "confidence": "low"
-      },
-      "samples": 5
-    },
-    "1604030": {
-      "peak_ccu": 3753,
-      "peak_ccu_hour_utc": 9,
-      "peak_twitch_viewers": 152,
-      "peak_twitch_hour_utc": 4,
-      "region": {
-        "code": "OCEANIA",
-        "label": "🇦🇺 Océanie",
-        "emoji": "🇦🇺",
-        "confidence": "medium"
-      },
-      "samples": 5
-    },
-    "2646460": {
-      "peak_ccu": 2057,
-      "peak_ccu_hour_utc": 9,
-      "peak_twitch_viewers": 9,
-      "peak_twitch_hour_utc": 2,
-      "region": {
-        "code": "OCEANIA",
-        "label": "🇦🇺 Océanie",
-        "emoji": "🇦🇺",
-        "confidence": "medium"
       },
       "samples": 5
     },
@@ -28262,16 +28197,42 @@
       },
       "samples": 5
     },
-    "251570": {
-      "peak_ccu": 31996,
+    "2399830": {
+      "peak_ccu": 27051,
       "peak_ccu_hour_utc": 9,
-      "peak_twitch_viewers": 1290,
+      "peak_twitch_viewers": 1869,
+      "peak_twitch_hour_utc": 2,
+      "region": {
+        "code": "MIXED",
+        "label": "🇦🇺 Océanie / Asie Est",
+        "emoji": "🇦🇺🇨🇳",
+        "confidence": "low"
+      },
+      "samples": 5
+    },
+    "251570": {
+      "peak_ccu": 32326,
+      "peak_ccu_hour_utc": 9,
+      "peak_twitch_viewers": 1329,
       "peak_twitch_hour_utc": 9,
       "region": {
         "code": "MIXED",
         "label": "🇦🇺 Océanie / Asie Est",
         "emoji": "🇦🇺🇨🇳",
         "confidence": "low"
+      },
+      "samples": 5
+    },
+    "1172710": {
+      "peak_ccu": 4447,
+      "peak_ccu_hour_utc": 9,
+      "peak_twitch_viewers": 160,
+      "peak_twitch_hour_utc": 7,
+      "region": {
+        "code": "OCEANIA",
+        "label": "🇦🇺 Océanie",
+        "emoji": "🇦🇺",
+        "confidence": "medium"
       },
       "samples": 5
     },
@@ -28288,10 +28249,49 @@
       },
       "samples": 5
     },
-    "2399830": {
-      "peak_ccu": 27007,
+    "2646460": {
+      "peak_ccu": 2111,
+      "peak_ccu_hour_utc": 9,
+      "peak_twitch_viewers": 9,
+      "peak_twitch_hour_utc": 2,
+      "region": {
+        "code": "OCEANIA",
+        "label": "🇦🇺 Océanie",
+        "emoji": "🇦🇺",
+        "confidence": "medium"
+      },
+      "samples": 5
+    },
+    "1371580": {
+      "peak_ccu": 711,
+      "peak_ccu_hour_utc": 9,
+      "peak_twitch_viewers": 0,
+      "peak_twitch_hour_utc": 2,
+      "region": {
+        "code": "OCEANIA",
+        "label": "🇦🇺 Océanie",
+        "emoji": "🇦🇺",
+        "confidence": "medium"
+      },
+      "samples": 5
+    },
+    "2139460": {
+      "peak_ccu": 15219,
+      "peak_ccu_hour_utc": 9,
+      "peak_twitch_viewers": 1431,
+      "peak_twitch_hour_utc": 2,
+      "region": {
+        "code": "MIXED",
+        "label": "🇦🇺 Océanie / Asie Est",
+        "emoji": "🇦🇺🇨🇳",
+        "confidence": "low"
+      },
+      "samples": 5
+    },
+    "892970": {
+      "peak_ccu": 16740,
       "peak_ccu_hour_utc": 2,
-      "peak_twitch_viewers": 1869,
+      "peak_twitch_viewers": 472,
       "peak_twitch_hour_utc": 2,
       "region": {
         "code": "MIXED",
@@ -28304,7 +28304,7 @@
     "440900": {
       "peak_ccu": 8163,
       "peak_ccu_hour_utc": 2,
-      "peak_twitch_viewers": 1390,
+      "peak_twitch_viewers": 1263,
       "peak_twitch_hour_utc": 9,
       "region": {
         "code": "MIXED",
@@ -28314,23 +28314,36 @@
       },
       "samples": 5
     },
-    "1172710": {
-      "peak_ccu": 4402,
-      "peak_ccu_hour_utc": 2,
-      "peak_twitch_viewers": 160,
-      "peak_twitch_hour_utc": 7,
+    "1203620": {
+      "peak_ccu": 6919,
+      "peak_ccu_hour_utc": 9,
+      "peak_twitch_viewers": 119,
+      "peak_twitch_hour_utc": 9,
       "region": {
         "code": "MIXED",
-        "label": "🇺🇸 Amérique Ouest / Amérique Est",
-        "emoji": "🇺🇸🇺🇸",
+        "label": "🇦🇺 Océanie / Asie Est",
+        "emoji": "🇦🇺🇨🇳",
         "confidence": "low"
       },
       "samples": 5
     },
-    "221100": {
-      "peak_ccu": 33395,
+    "1604030": {
+      "peak_ccu": 3989,
       "peak_ccu_hour_utc": 9,
-      "peak_twitch_viewers": 3573,
+      "peak_twitch_viewers": 152,
+      "peak_twitch_hour_utc": 4,
+      "region": {
+        "code": "OCEANIA",
+        "label": "🇦🇺 Océanie",
+        "emoji": "🇦🇺",
+        "confidence": "medium"
+      },
+      "samples": 5
+    },
+    "221100": {
+      "peak_ccu": 37229,
+      "peak_ccu_hour_utc": 9,
+      "peak_twitch_viewers": 3465,
       "peak_twitch_hour_utc": 9,
       "region": {
         "code": "OCEANIA",
@@ -28340,29 +28353,16 @@
       },
       "samples": 5
     },
-    "1203620": {
-      "peak_ccu": 6875,
-      "peak_ccu_hour_utc": 2,
-      "peak_twitch_viewers": 110,
-      "peak_twitch_hour_utc": 9,
-      "region": {
-        "code": "MIXED",
-        "label": "🇺🇸 Amérique Ouest / Amérique Est",
-        "emoji": "🇺🇸🇺🇸",
-        "confidence": "low"
-      },
-      "samples": 5
-    },
-    "2139460": {
-      "peak_ccu": 14845,
+    "346110": {
+      "peak_ccu": 21227,
       "peak_ccu_hour_utc": 9,
-      "peak_twitch_viewers": 1431,
+      "peak_twitch_viewers": 214,
       "peak_twitch_hour_utc": 2,
       "region": {
-        "code": "MIXED",
-        "label": "🇦🇺 Océanie / Asie Est",
-        "emoji": "🇦🇺🇨🇳",
-        "confidence": "low"
+        "code": "ASIA_E",
+        "label": "🇨🇳 Asie Est",
+        "emoji": "🇨🇳",
+        "confidence": "medium"
       },
       "samples": 5
     }
